@@ -1,0 +1,27 @@
+{
+  "name": "js-framework-benchmark-spect",
+  "version": "1.0.0",
+  "description": "Spect demo",
+  "main": "index.js",
+  "js-framework-benchmark": {
+    "frameworkVersionFromPackage": "spect"
+  },
+  "scripts": {
+    "build-dev": "snowpack",
+    "build-prod": "snowpack --optimize"
+  },
+  "keywords": [],
+  "author": "Dmitry Iv",
+  "license": "MIT",
+  "homepage": "https://github.com/krausest/js-framework-benchmark",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krausest/js-framework-benchmark.git"
+  },
+  "devDependencies": {
+    "snowpack": "^1.6.0"
+  },
+  "dependencies": {
+    "spect": "^21.1.2"
+  }
+}
