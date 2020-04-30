@@ -1,16 +1,16 @@
 {
-  "name": "js-framework-benchmark-vue",
+  "name": "js-framework-benchmark-isotope",
   "version": "1.0.0",
-  "description": "Benchmark for vue.js framework",
+  "description": "Benchmark for Isotope UI library",
   "js-framework-benchmark": {
-    "frameworkVersionFromPackage": "vue"
+    "frameworkVersionFromPackage": "@isotope/core"
   },
   "scripts": {
-    "build-dev": "webpack -w -d",
-    "build-prod": "webpack -p"
+    "build-dev": "rollup -c -w",
+    "build-prod": "rollup -c --environment production"
   },
   "keywords": [
-    "vue"
+    "isotope"
   ],
   "author": "Stefan Krause",
   "license": "Apache-2.0",
@@ -20,12 +20,11 @@
     "url": "https://github.com/krausest/js-framework-benchmark.git"
   },
   "devDependencies": {
-    "@vue/compiler-sfc": "^3.0.0-beta.2",
-    "vue-loader": "^16.0.0-alpha.1",
-    "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10"
+    "@rollup/plugin-node-resolve": "7.0.0",
+    "rollup": "1.15.6",
+    "rollup-plugin-terser": "5.0.0"
   },
   "dependencies": {
-    "vue": "^3.0.0-beta.2"
+    "@isotope/core": "0.2.0"
   }
 }
